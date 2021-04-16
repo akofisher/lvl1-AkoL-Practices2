@@ -1,0 +1,29 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  font-size: 20px;
+  background-color: #fff;
+  font-family: system-ui;
+}
+* {
+  box-sizing: border-box;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+}
+.red {
+  background: rgb(204, 12, 12);
+}
+.green {
+  background: rgb(7, 136, 7);
+}
