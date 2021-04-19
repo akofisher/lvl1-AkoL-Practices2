@@ -27,3 +27,20 @@ td {
 .green {
   background: rgb(7, 136, 7);
 }
+.sub-inp,
+.sub-btn {
+  width: 800px;
+  height: 80px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+#container {
+  margin: auto;
+}
+input {
+  width: 120px;
+}
+.addsub {
+  margin: auto;
+}

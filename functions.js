@@ -41,7 +41,10 @@ for (let i = 0; i < avg.length; i++) {
 // GET
 let container = document.getElementById('container');
 let thead = document.querySelector('#container thead tr');
+let tfoot = document.querySelector('#container tfoot');
 let tbody = document.querySelector('#container tbody');
+let subInp = document.querySelector('.sub-inp');
+let subBtn = document.querySelector('.sub-btn');
 
 
 // GENERATE
@@ -65,7 +68,7 @@ tmk += `<td class="${avg[j] > students[i].scores[j] ? 'red' : 'green'}">${studen
 
 
 }
-tbody.innerHTML += tmk;
+tfoot.innerHTML += tmk;
 
 
 tmz = '<tr>'+
@@ -77,4 +80,53 @@ for (let i = 0; i < avg.length; i++){
 }
 tmz += '</tr>';
 
-tbody.innerHTML += tmz;
+tfoot.innerHTML += tmz;
+
+
+
+//INPUTS 
+
+let tmj = '';
+for (let i = 0; i < (subject.length + 2); i++){
+   tmj += `<input type="text" placeholder="Date">`;
+
+}
+let tmt = '';
+for (let i = 0; i < 1; i++) {
+  tmt += `<input class="btn" type="submit" name="SUBMIT" onclick="myFunction()">`;
+}
+
+subInp.innerHTML += tmj;
+subInp.innerHTML += tmt;
+
+/*  FUNCTION არ მუშაობს
+
+function myFunction() {
+  
+  trt = '<tr>';
+  for (let i = 0; i < (subject.length + 2); i++){  
+  trt += `<td>${(input[type="text"]).value}</td>`;  
+  }
+  trt += '</tr>';
+  
+  tbody.innerHTML += trt;
+
+}
+*/
+
+
+
+//ADD SUBJECT
+
+let add = '';
+for (let i = 0; i < 1; i++){
+  add += `<h3>Add Subjects</h3>
+  <input type="text" placeholder="Date">
+ <input class="addsub" type="submit" name="addsub" onclick="addFunction()">`; 
+}
+subBtn.innerHTML += add;
+
+
+
+
+
