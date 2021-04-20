@@ -68,7 +68,7 @@ tmk += `<td class="${avg[j] > students[i].scores[j] ? 'red' : 'green'}">${studen
 
 
 }
-tfoot.innerHTML += tmk;
+tbody.innerHTML += tmk;
 
 
 tmz = '<tr>'+
@@ -87,8 +87,13 @@ tfoot.innerHTML += tmz;
 //INPUTS 
 
 let tmj = '';
-for (let i = 0; i < (subject.length + 2); i++){
-   tmj += `<input type="text" placeholder="Date">`;
+for (let i = 0; i < 1; i++){
+   tmj += `<input class="data1" type="text" placeholder="Date">
+   <input class="data2" type="text" placeholder="Date">
+   <input class="data3" type="text" placeholder="Date">
+   <input class="data4" type="text" placeholder="Date">
+   <input class="data5" type="text" placeholder="Date">
+   <input class="data6" type="text" placeholder="Date">`;
 
 }
 let tmt = '';
@@ -99,29 +104,39 @@ for (let i = 0; i < 1; i++) {
 subInp.innerHTML += tmj;
 subInp.innerHTML += tmt;
 
-/*  FUNCTION არ მუშაობს
 
 function myFunction() {
+  let DaTaa1 = document.querySelector('.data1[type="text"]').value;
+  let DaTaa2 = document.querySelector('.data2[type="text"]').value;
+  let DaTaa3 = parseInt(document.querySelector('.data3[type="text"]').value);
+  let DaTaa4 = parseInt(document.querySelector('.data4[type="text"]').value);
+  let DaTaa5 = parseInt(document.querySelector('.data5[type="text"]').value);
+  let DaTaa6 = parseInt(document.querySelector('.data6[type="text"]').value);
   
-  trt = '<tr>';
-  for (let i = 0; i < (subject.length + 2); i++){  
-  trt += `<td>${(input[type="text"]).value}</td>`;  
+  let trt = '';
+  
+  for (let i = 0; i < 1; i++){  
+  trt += `<tr><td>${DaTaa1}</td>
+  <td>${DaTaa2}</td>
+  <td>${DaTaa3}</td>
+  <td>${DaTaa4}</td>
+  <td>${DaTaa5}</td>
+  <td>${DaTaa6}</td></tr>`;  
   }
-  trt += '</tr>';
+  
   
   tbody.innerHTML += trt;
 
 }
-*/
+
 
 
 
 //ADD SUBJECT
-
 let add = '';
 for (let i = 0; i < 1; i++){
   add += `<h3>Add Subjects</h3>
-  <input type="text" placeholder="Date">
+  <input class="addsub1" type="text" placeholder="Date">
  <input class="addsub" type="submit" name="addsub" onclick="addFunction()">`; 
 }
 subBtn.innerHTML += add;
