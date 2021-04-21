@@ -125,6 +125,7 @@ function myFunction() {
   }
   
   
+  
   tbody.innerHTML += trt;
 
 }
