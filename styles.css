@@ -44,3 +44,11 @@ input {
 .addsub {
   margin: auto;
 }
+
+.points {
+  width: 800px;
+  height: 80px;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+}

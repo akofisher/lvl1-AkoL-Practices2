@@ -45,6 +45,7 @@ let tfoot = document.querySelector('#container tfoot');
 let tbody = document.querySelector('#container tbody');
 let subInp = document.querySelector('.sub-inp');
 let subBtn = document.querySelector('.sub-btn');
+let points = document.querySelector('.points');
 
 
 // GENERATE
@@ -101,6 +102,9 @@ for (let i = 0; i < 1; i++) {
   tmt += `<input class="btn" type="submit" name="SUBMIT" onclick="myFunction()">`;
 }
 
+
+
+
 subInp.innerHTML += tmj;
 subInp.innerHTML += tmt;
 
@@ -140,7 +144,55 @@ for (let i = 0; i < 1; i++){
   <input class="addsub1" type="text" placeholder="Date">
  <input class="addsub" type="submit" name="addsub" onclick="addFunction()">`; 
 }
+
 subBtn.innerHTML += add;
+
+//GET SUBJECT
+
+function addFunction() {
+  let subjectData = document.querySelector('.addsub1').value;
+  for (let i = 0; i < 1; i++){
+    trd = '';
+    
+    
+    trd += `<th>${subjectData}</th>`;
+    thead.innerHTML += trd;
+
+
+  }
+
+  }
+
+  // ADD POINTS
+/*  ჯერ არ მუშაობს  
+  let trr = '';
+for (let i = 0; i < 1; i++){
+   trr += `<h3>Points for Students</h3> 
+   <input class="point1" type="text" placeholder="Point">
+   <input class="point2" type="text" placeholder="Point">
+   <input class="point3" type="text" placeholder="Point">
+   <input class="point4" type="text" placeholder="Point">
+   <input class="point5" type="text" placeholder="Point">
+   <input class="point6" type="text" placeholder="Point">`;
+
+}
+let trz = '';
+for (let i = 0; i < 1; i++) {
+  trz += `<input class="btn3" type="submit" name="SUBMIT" onclick="trrFunction()">`;
+}
+
+points.innerHTML += trr;
+points.innerHTML += trz;      */
+
+
+
+
+
+
+
+
+
+
 
 
 
