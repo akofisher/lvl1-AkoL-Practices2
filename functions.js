@@ -4,13 +4,13 @@ class Subject  {
   this.html = _html;
   this.css = _css;
   this.js = _js;
-  this.python = _python;
+  this.python = _python;  
  } 
 
  
  
 };
-let subject1 = new Subject(['HTML','CSS','JS','PYTHON']);
+let subject1 = new Subject('HTML','CSS','JS','PYTHON');
 
 
 class Students { 
@@ -23,10 +23,10 @@ constructor (_name, _lastname, _scores) {
    
   };
   
-  let student1 = new Students('Nick','Pfender','[23, 45, 34, 65]');
-  let student2 = new Students('Frank','Galagher','[54, 45, 78, 43]');
-  let student3 = new Students('Josh','Jameson','[56, 45, 65,  45]');
-  let student4 = new Students('Lip','Eisenberg','[99, 45, 76, 35]');
+  let student1 = new Students('Nick','Pfender', ['23', '45', '34', '65']);
+  let student2 = new Students('Frank','Galagher', ['54', '45', '78', '43']);
+  let student3 = new Students('Josh','Jameson', ['56', '45', '65',  '45']);
+  let student4 = new Students('Lip','Eisenberg', ['99', '45', '76', '35']);
   
 // AVG
 
