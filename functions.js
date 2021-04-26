@@ -38,8 +38,7 @@ for (let j = 0; j < subject.length; j++){
   
 }
 for (let i = 0; i < avg.length; i++) {
-  avg[i] /= subject.length;
-}
+  avg[i] /= subject.length;}
 
 
 // GET
@@ -70,7 +69,6 @@ for (let j = 0; j < students.length; j++) {
 tmk += `<td class="${avg[j] > students[i].scores[j] ? 'red' : 'green'}">${students[i].scores[j]}</td>`; 
 }
    tmk += '</tr>';
-
 
 }
 tbody.innerHTML += tmk;
