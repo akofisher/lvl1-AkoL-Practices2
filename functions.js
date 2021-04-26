@@ -1,29 +1,33 @@
-let subject = ['HTML','CSS','JS','PYTHON'];
+class Subject  {
+ 
+ constructor (_html, _css, _js, _python) {
+  this.html = _html;
+  this.css = _css;
+  this.js = _js;
+  this.python = _python;
+ } 
 
-let students = [
- {
-   name: 'Nick',
-   lastname: 'Pfender',
-   scores: [23, 45, 34, 65]
- },
- {
-   name: 'Frank',
-   lastname: 'Galagher',
-   scores: [54, 45, 78, 43]
- },
- {
-   name: 'Josh',
-   lastname: 'Jameson',
-   scores: [56, 45, 65,  45] 
- },
- {
-   name: 'Lip',
-   lastname: 'Eisenberg',
-   scores: [99, 45, 76, 35]
- }
+ 
+ 
+};
+let subject1 = new Subject(['HTML','CSS','JS','PYTHON']);
 
-];
 
+class Students { 
+constructor (_name, _lastname, _scores) {
+   this.name = _name;
+   this.lastname = _lastname;
+   this.scores = _scores;
+   
+   }   
+   
+  };
+  
+  let student1 = new Students('Nick','Pfender','[23, 45, 34, 65]');
+  let student2 = new Students('Frank','Galagher','[54, 45, 78, 43]');
+  let student3 = new Students('Josh','Jameson','[56, 45, 65,  45]');
+  let student4 = new Students('Lip','Eisenberg','[99, 45, 76, 35]');
+  
 // AVG
 
 let avg = [0, 0, 0, 0];
@@ -183,18 +187,3 @@ for (let i = 0; i < 1; i++) {
 
 points.innerHTML += trr;
 points.innerHTML += trz;      */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
