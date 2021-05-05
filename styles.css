@@ -8,47 +8,34 @@ body {
   background-color: #fff;
   font-family: system-ui;
 }
+
+:root {
+  --text-color: #000;
+  --minmax: minmax(100px, auto);
+  --grid-gap: 8px 16px;
+}
+
 * {
   box-sizing: border-box;
+  margin: auto;
 }
+
 table,
 th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
-}
-th,
-td {
-  padding: 5px;
-}
-.red {
-  background: rgb(204, 12, 12);
-}
-.green {
-  background: rgb(7, 136, 7);
-}
-.sub-inp,
-.sub-btn {
-  width: 800px;
-  height: 80px;
-  margin: auto;
   text-align: center;
-  padding: 20px;
-}
-#container {
-  margin: auto;
-}
-input {
-  width: 120px;
-}
-.addsub {
-  margin: auto;
 }
 
-.points {
-  width: 800px;
-  height: 80px;
-  margin: auto;
+form {
   text-align: center;
-  padding-top: 80px;
+  margin-top: 50px;
+}
+
+.red {
+  background: #ff5d67;
+}
+.green {
+  background: chartreuse;
 }
