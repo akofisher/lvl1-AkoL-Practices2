@@ -1,14 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>API</title>
- <link rel="stylesheet" href="./styles.css">
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ <title>Burger, Slider, Module</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="./styles.css"> 
 </head>
-<body>
+<body> 
 
+ <!-- Burger NavBar -->
+
+ <div class="container">  
+
+  <div class="topnav">
+
+   <a href="#home" class="active">Logo</a>
+   <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+   </div>
+
+   <a class="icon" onclick="firstFunction()">
+    <i class="fa fa-bars"></i>
+   </a>
+
+  </div>
+
+  <div class="padd" >
+
+   <h3>Burger Navbar</h3>
+
+  </div>
+
+  
+ </div>
+
+ <!-- Slider -->
+
+ <div class="sec-content ">
+
+ <div class="sec-container">
+  <h2>Slideshow</h2>  
+ </div>
+ 
+ 
+  <div class="mySlides">
+   <img src="../Photo/1.jpg" >
+   <h3>
+    PSY
+   </h3>
+  </div>
+ 
+  <div class="mySlides">
+   <img src="../Photo/2.jpg" >
+   <h3>
+    Peace
+   </h3>
+  </div>
+ 
+  <div class="mySlides">
+   <img src="../Photo/3.jpg" >
+   <h3>
+    Also peace Bro..
+   </h3>
+  </div>
+ 
+  <div class="mySlides">
+   <img src="../Photo/4.jpg" >
+   <h3>
+    Archery
+   </h3>
+  </div>
+ 
+  <div class="mySlides">
+   <img src="../Photo/5.jpg" >
+   <h3>
+    Batumi
+   </h3>
+  </div>
+ 
+  <div class="buttons">
+  <button onclick="plusDivs(-1)">&#10094;</button>
+  <button onclick="plusDivs(1)">&#10095;</button>
+ </div>
+
+ </div>
+
+ <!-- Modal -->
+
+<div class="boss">
+
+ <div id="backdrop"></div>
+ 
+ <div class="modal card" id="add-modal">
+ 
+  <div class="modal__actions">
+   <button class="btn btn--passive">Cancel</button>
+   <button class="btn btn--success">Add Something</button>
+  </div>
+ </div>
+ 
+ 
+ <header>
+  <h1>Ako's Modal</h1>
+  <button>Show Modal</button>
+ </header>
+ 
+ </div>
+ 
+
+
+
+ 
 
  <script src="./functions.js"></script>
 </body>
