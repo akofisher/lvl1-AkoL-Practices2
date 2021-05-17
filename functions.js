@@ -1,52 +1,21 @@
-// Burger NavBar
+// HIDDEN BAR
 
-function firstFunction() {
-   let x = document.getElementById("myLinks");
-   if (x.style.display === "block") {
-    x.style.display = "none";
-   } else {
-    x.style.display = "block";
-   }
-  }
+let CLICKER = document.getElementById('clicker');
+let SHOWING = document.getElementById('showing');
+let BACKCALL = document.getElementById('back');
 
-// Slider
-
-let slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function transition() {
+  SHOWING.style.marginLeft = '-5px';
+  SHOWING.style.transition = '1s';
 }
 
-function showDivs(n) {
-  let i;
-  let x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block"; }
+function backcall() {
+  SHOWING.style.marginLeft = '-300px';
+  SHOWING.style.transition = '1s';
+}
 
-  // Modal
-
-const addModal = document.getElementById('add-modal');
-const startButton = document.querySelector('header button');
-const cancelButton = addModal.querySelector('.btn--passive');
-
-const toggleBackdrop = () => {
-  backdrop.classList.toggle('visible');
-};
-
-const toggleModal = () => { 
-  addModal.classList.toggle('visible');
-  toggleBackdrop();
-};
-
-const cancelAdd = () => {
-  toggleModal();
-};
+CLICKER.addEventListener('click', transition);
+BACKCALL.addEventListener('click', backcall);
 
 
-startButton.addEventListener('click', toggleModal);
-cancelButton.addEventListener('click', cancelAdd)
+

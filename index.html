@@ -4,118 +4,171 @@
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
- <title>Burger, Slider, Module</title>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <title>Burger, Slider, Module</title> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+  crossorigin="anonymous" />
  <link rel="stylesheet" href="./styles.css"> 
 </head>
 <body> 
-
- <!-- Burger NavBar -->
-
- <div class="container">  
-
-  <div class="topnav">
-
-   <a href="#home" class="active">Logo</a>
-   <div id="myLinks">
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+<!-- First Line -->
+ <div class="first-container">
+   <div class="fc-left">
+   <h5>Welcome to Our store Multikart</h5>
+   <h5><i class="fas fa-phone-alt red"></i>Call Us: 123-456-7890</h5>
+   </div>
+   <div class="fc-right">
+   <i class="fas fa-heart"></i>
+   <a href="#" target="_blank" class="account">My account</a>
    </div>
 
-   <a class="icon" onclick="firstFunction()">
-    <i class="fa fa-bars"></i>
-   </a>
+ </div>
 
-  </div>
+ <!-- Nav Bar -->
 
-  <div class="padd" >
-
-   <h3>Burger Navbar</h3>
-
-  </div>
+ <div class="navbar">
 
   
- </div>
+  <!-- Hidden Nav Bar --> 
+  <div id="showing" class="hidden-nav">
+   <ul>
+    <h3 id="back" ><i class="fas fa-chevron-left"></i>BACK</h3>
+    <li>CLOTHING<i class="fas fa-chevron-right"></i></li>
+    <li>BAGS<i class="fas fa-chevron-right"></i></li>
+    <li>FOOTWEAR<i class="fas fa-chevron-right"></i></li>
+    <li>WATCHES</li>
+    <li>ACCESSORIES<i class="fas fa-chevron-right"></i></li>
+    <li>HOUSE OF DESIGN</li>
+    <li>BEAUTY & PERSONAL CARE<i class="fas fa-chevron-right"></i></li>
+    <li>HOME & DECOR</li>
+    <li>KITCHEN</li>
+   </ul>
+  </div>
 
- <!-- Slider -->
+  <div class="nb-lg">
+   <a id="clicker" href="#" ><i class="fas fa-bars nav-log"></i></a>
+   
 
- <div class="sec-content ">
+  <img class="imglogo" src="http://themes.pixelstrap.com/multikart/assets/images/icon/logo.png" alt="Logo">
+  </div>
 
- <div class="sec-container">
-  <h2>Slideshow</h2>  
- </div>
- 
- 
-  <div class="mySlides">
-   <img src="../Photo/1.jpg" >
-   <h3>
-    PSY
-   </h3>
+  <div class="nb-ls">
+  <ul>
+   <li class="sm-down"><a href="#">HOME</a></li>
+   <li class="sm-down"><a href="#">FEATURE<i class="fas fa-chevron-down sm-down"></i></a></li>
+   <li class="sm-down"><a href="#">SHOP<i class="fas fa-chevron-down sm-down"></i></a></li>
+   <li class="sm-down"><a href="#">PRODUCT<i class="fas fa-chevron-down sm-down"></i></a></li>
+   <li class="sm-down"><a href="#">PAGES<i class="fas fa-chevron-down sm-down"></i></a></li>
+   <li class="sm-down"><a href="#">BLOG<i class="fas fa-chevron-down sm-down"></i></a></li>
+  </ul>  
+  <a href="#"><i class="fas fa-search sm-down"></i></a>
+  <a href="#"><i class="fas fa-cog sm-down"></i></a>
+  <a href="#"><i class="fas fa-shopping-basket sm-down"></i></a>
   </div>
- 
-  <div class="mySlides">
-   <img src="../Photo/2.jpg" >
-   <h3>
-    Peace
-   </h3>
-  </div>
- 
-  <div class="mySlides">
-   <img src="../Photo/3.jpg" >
-   <h3>
-    Also peace Bro..
-   </h3>
-  </div>
- 
-  <div class="mySlides">
-   <img src="../Photo/4.jpg" >
-   <h3>
-    Archery
-   </h3>
-  </div>
- 
-  <div class="mySlides">
-   <img src="../Photo/5.jpg" >
-   <h3>
-    Batumi
-   </h3>
-  </div>
- 
-  <div class="buttons">
-  <button onclick="plusDivs(-1)">&#10094;</button>
-  <button onclick="plusDivs(1)">&#10095;</button>
- </div>
+
 
  </div>
 
- <!-- Modal -->
+ <!-- BIG SLIDER -->
 
-<div class="boss">
-
- <div id="backdrop"></div>
- 
- <div class="modal card" id="add-modal">
- 
-  <div class="modal__actions">
-   <button class="btn btn--passive">Cancel</button>
-   <button class="btn btn--success">Add Something</button>
+ <div class="big-slider">
+  <div class="left-s">
+  <i class="fas fa-chevron-left sliders-ar"></i>
+  </div>
+  <div class="right-s">
+  <i class="fas fa-chevron-right sliders-ar"></i>
   </div>
  </div>
+
+ <!-- TWO PHOTOS -->
  
- 
- <header>
-  <h1>Ako's Modal</h1>
-  <button>Show Modal</button>
- </header>
- 
+ <div class="two-photos">
+  <div class="firstF">
+
+  </div>
+  <div class="secondF">
+
+  </div>
  </div>
+
+ <!-- SOME INFORMATION -->
+
+ <div class="information">
+  <p>Scpecial Offer</p>
+  <h1>LATEST DROPS</h1>
+  <div class="bot"></div>
+  <p>Looking for the latest trends in clothing, shoes and accessories? Welcome to our 'Latest Drops' edit,</br> bringing you all
+  the latest styles from all your fave brands.</p>
+
+ </div>
+
+ <!-- SHOPPING PHOTOS -->
+
+ <div class="shoppingF">
+
+    <div class="first-photo Fsize">
+       <div class="bottomA">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <h4>Some Clothes</h4>
+        <h3>25.00$ <span>50.00$</span></h3>
+       </div>
+    </div>
+  
+    <div class="second-photo Fsize">
+       <div class="bottomB">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <h4>Some Clothes</h4>
+        <h3>15.00$ <span>50.00$</span></h3>
+       </div>
+    </div>
+  
+    <div class="third-photo Fsize">
+       <div class="bottomC">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i> 
+        <h4>Some Clothes</h4>
+        <h3>27.00$ <span>50.00$</span></h3>
+       </div>
+    </div>
+  
+    <div class="fourth-photo Fsize">
+       <div class="bottomD">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+        <h4>Some Clothes</h4>
+        <h3>21.00$ <span>50.00$</span></h3>
+       </div>
+    </div>
+
+ </div>
+
+ <!-- To Be Continue -->
+ <div class="Continue">
+  <h1> To Be Continue... </h1>
+ </div>
+
+
+
+
+
+
+
+
  
-
-
-
- 
-
  <script src="./functions.js"></script>
 </body>
 

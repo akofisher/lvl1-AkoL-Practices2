@@ -3,206 +3,334 @@ html body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 * {
   box-sizing: border-box;
 }
 
-/* Burger NavBar */
-
-.container {
-  max-width: 480px;
-  margin: auto;
-  background-color: rgb(191, 151, 151);
-  height: 500px;
-  color: white;
-  border-radius: 10px;
+.red {
+  color: red;
+}
+h5,
+.account {
+  padding-left: 40px;
+  margin: 0;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: rgb(146, 142, 142);
-  position: relative;
-}
-
-.topnav #myLinks {
-  display: none;
-}
-
-.topnav a {
-  color: white;
-  padding: 14px 16px;
+a {
   text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
   color: black;
 }
-
-.active {
-  background-color: #50d8a6;
-  color: white;
+a:hover {
+  color: cornflowerblue;
 }
 
-.padd {
-  padding-left: 16px;
-}
-
-/* Slider  */
-
-.sec-content {
+ul,
+li {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  list-style-type: none;
+  flex-wrap: wrap;
 }
 
-img {
-  width: 800px;
-  height: 500px;
-}
+/* First Line */
 
-.mySlides {
-  display: none;
-}
-
-/* Modal */
-
-.boss {
-  padding-top: 30px;
-}
-
-button:focus {
-  outline: none;
-}
-
-header {
-  width: 100%;
-  height: 4rem;
+.first-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 2.5rem;
-  background: #00329e;
+  min-height: 30px;
+  max-height: 60px;
+  align-items: baseline;
+  padding: 5px;
+  background-color: lightgrey;
 }
-
-header h1 {
-  margin: 0;
-  color: white;
-  font-size: 1.5rem;
-}
-
-header button {
-  font: inherit;
-  padding: 0.5rem 1rem;
-  background: #f67722;
-  border: 1px solid #f67722;
-  color: white;
-  border-radius: 6px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
-  cursor: pointer;
-}
-
-header button:hover,
-header button:active {
-  background: #f3cc4b;
-  border-color: #f3cc4b;
-  color: #995200;
-}
-
-.btn {
-  font: inherit;
-  padding: 0.5rem 1.5rem;
-  border: 1px solid #00329e;
-  background: #00329e;
-  color: white;
-  border-radius: 6px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
-  cursor: pointer;
-  margin: 0 0.5rem;
-}
-
-.btn:hover,
-.btn:active {
-  background: #f67722;
-  border-color: #f67722;
-}
-
-.btn--passive {
-  color: #00329e;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.btn--passive:hover,
-.btn--passive:active {
-  background: #aec6f8;
-}
-
-.card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-}
-
-.modal {
-  position: fixed;
-  z-index: 100;
-  width: 80%;
-  top: 30vh;
-  left: 10%;
-  display: none;
-}
-
-.modal.visible {
-  display: block;
-  animation: fade-slide-in 0.3s ease-out forwards;
-}
-
-.modal .modal__title {
-  margin: 0;
-  padding: 1rem;
-  border-bottom: 1px solid #00329e;
-  background: #00329e;
-  color: white;
-  border-radius: 10px 10px 0 0;
-}
-
-.modal .modal__content {
-  padding: 1rem;
-}
-
-.modal .modal__actions {
-  padding: 1rem;
+.fc-left {
   display: flex;
+  padding-left: 150px;
+}
+
+.fc-right {
+  display: flex;
+  padding-right: 150px;
+}
+
+/* Nav Bar */
+
+.navbar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  min-height: 40px;
+  max-height: 80px;
+}
+
+.nb-lg {
+  padding-left: 190px;
+}
+
+.nb-ls {
+  display: flex;
+  align-items: baseline;
+  padding-right: 150px;
+}
+.sm-down {
+  padding-left: 10px;
+}
+
+.nav-log {
+  font-size: 40px;
+  padding: 10px;
+}
+
+/* HIDDEN NAVBAR */
+
+.hidden-nav,
+.hidden-nav ul {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 300px;
+  align-content: space-between;
+  position: absolute;
+  background-color: white;
+  top: 10px;
+}
+
+.hidden-nav ul h3 {
+  margin: 0;
+  padding: 20px;
+}
+.hidden-nav ul h3 i {
+  padding-right: 15px;
+}
+
+.hidden-nav ul li {
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.hidden-nav {
+  margin-left: -300px;
+}
+
+.hidden-nav ul li:hover {
+  background-color: lightgrey;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden-nav ul h3:hover {
+  cursor: pointer;
+  color: lightgrey;
+}
+
+/* BIG SLIDER */
+
+.big-slider {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  min-height: 80vh;
+  background-image: url('https://www.thoughtco.com/thmb/C7RiS4QG5TXcBG2d_Sh9i4hFpg0=/3620x2036/smart/filters:no_upscale()/close-up-of-clothes-hanging-in-row-739240657-5a78b11f8e1b6e003715c0ec.jpg');
+  background-size: cover;
+}
+
+.left-s,
+.right-s {
+  min-height: 100%;
+  min-width: 50%;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
-#backdrop {
-  position: fixed;
+.sliders-ar {
+  font-size: 200px;
+  opacity: 0.6;
+}
+
+/* TWO PHOTOS */
+
+.two-photos {
+  min-width: 100%;
+  min-height: 45vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.firstF,
+.secondF {
+  min-width: 40vw;
+  min-height: 40vh;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.firstF {
+  background-image: url('https://www.thenationalnews.com/image/policy:1.836928:1552558576/39405675_241762989863919_3752448072509030400_n.jpg?f=16x9&w=1200&$p$f$w=6a6b01b');
+  background-size: cover;
+}
+
+.secondF {
+  background-image: url('https://ychef.files.bbci.co.uk/976x549/p075lzt8.jpg');
+  background-size: cover;
+}
+
+.firstF:hover,
+.secondF:hover {
+  background-size: 102%;
+}
+
+/* SOME INFORMATION */
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.information p:first-child {
+  font-size: 20px;
+  color: rgb(191, 51, 51);
+  margin: 0;
+  padding: 10px;
+}
+.information h1 {
+  padding: 5px;
+  margin: 0;
+}
+
+.information .bot {
+  width: 70px;
+  border: 1px solid red;
+}
+
+.information p:nth-child(4) {
+  font-size: 15px;
+  color: rgb(97, 86, 86);
+  text-align: center;
+  padding: 10px;
+}
+
+/* SHOPPING PHOTOS */
+
+.shoppingF {
   width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.75);
-  z-index: 10;
-  pointer-events: none;
-  display: none;
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
-#backdrop.visible {
-  display: block;
-  pointer-events: all;
+.Fsize {
+  min-width: 18vw;
+  min-height: 100%;
+}
+
+.first-photo {
+  background-image: url('https://i.pinimg.com/236x/14/f9/23/14f9235bb64b26e74307bef7ef8019d1--female-models-female-model-poses-photo-shoots.jpg');
+  background-size: cover;
+}
+
+.second-photo {
+  background-image: url('https://i.pinimg.com/originals/ca/4a/e0/ca4ae0ee63370d355a710a5a49a06aa3.jpg');
+  background-size: cover;
+}
+
+.third-photo {
+  background-image: url('https://images.squarespace-cdn.com/content/v1/508789b2e4b02f71416d31d0/1569620234826-0SOAX5RE2CLTIEZM1U8K/ke17ZwdGBToddI8pDm48kMXRibDYMhUiookWqwUxEZ97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0luUmcNM2NMBIHLdYyXL-Jww_XBra4mrrAHD6FMA3bNKOBm5vyMDUBjVQdcIrt03OQ/Aaron_Jay_Young_19854.jpg?format=1000w');
+  background-size: cover;
+}
+
+.fourth-photo {
+  background-image: url('https://phlearn.com/wp-content/uploads/2019/09/portrait-retouching-hour-example-1-after.jpg');
+  background-size: cover;
+}
+
+.first-photo,
+.second-photo,
+.third-photo,
+.fourth-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.bottomA,
+.bottomB,
+.bottomC,
+.bottomD {
+  width: 100%;
+  height: 5.5vw;
+  background-color: white;
+  padding: 7px;
+}
+
+.bottomA i,
+.bottomB i,
+.bottomC i,
+.bottomD i {
+  color: yellowgreen;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bottomA h4,
+.bottomB h4,
+.bottomC h4,
+.bottomD h4,
+.bottomA h3,
+.bottomB h3,
+.bottomC h3,
+.bottomD h3 {
+  margin: 0;
+  padding: 4px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+span {
+  font-size: 16px;
+  color: lightgrey;
+  text-decoration: line-through;
+}
+.first-photo:hover,
+.second-photo:hover,
+.third-photo:hover,
+.fourth-photo:hover {
+  background-size: 101%;
+}
+
+.bottomA i:hover,
+.bottomB i:hover,
+.bottomC i:hover,
+.bottomD i:hover {
+  color: blue;
+}
+
+/* To Be Continue */
+
+.Continue {
+  font-size: 50px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1210px) {
+  .imglogo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 805px) {
+  .nb-ls ul {
+    display: none;
+  }
+  .first-container {
+    display: none;
+  }
 }
