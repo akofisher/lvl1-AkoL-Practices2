@@ -5,12 +5,12 @@ let SHOWING = document.getElementById('showing');
 let BACKCALL = document.getElementById('back');
 
 function transition() {
-  SHOWING.style.marginLeft = '-220px';
+  SHOWING.style.marginLeft = '-80px';
   SHOWING.style.transition = '1s';
 }
 
 function backcall() {
-  SHOWING.style.marginLeft = '-700px';
+  SHOWING.style.marginLeft = '-500px';
   SHOWING.style.transition = '1s';
 }
 

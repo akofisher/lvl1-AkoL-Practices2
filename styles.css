@@ -20,19 +20,20 @@ body {
 
 /* HIDDEN NAVBAR */
 
+.hidden-nav {
+  position: relative;
+}
+
 .hidden-nav,
 .hidden-nav ul {
   display: flex;
   flex-direction: column;
-  min-width: 400px;
-  max-width: 600px;
+  min-width: 150px;
+  max-width: 300px;
   align-content: space-between;
   position: absolute;
   background-color: white;
   top: -5px;
-}
-
-.hidden-nav ul {
   height: 100vh;
 }
 
@@ -50,7 +51,11 @@ body {
 }
 
 .hidden-nav {
-  margin-left: -700px;
+  margin-left: -450px;
+}
+
+.hidden-nav ul i {
+  padding-left: 15px;
 }
 
 .hidden-nav ul li:hover {
@@ -69,6 +74,7 @@ body {
   color: lightgrey;
 }
 
+.hidden-nav ul,
 .znd {
   z-index: 999 !important;
 }
