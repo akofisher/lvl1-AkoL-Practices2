@@ -1,0 +1,17 @@
+{
+  "name": "javascriptt",
+  "version": "1.0.0",
+  "description": "ITUNES API",
+  "main": "functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.34.0"
+  }
+}
