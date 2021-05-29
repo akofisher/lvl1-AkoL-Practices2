@@ -14,7 +14,7 @@ function prodFetch(limit,desc) {
             let tmp = ``;
             for(let i=0; i< result.length; i++) {
                 tmp+=` 
-            <div class="col-6 col-md-3" id="COLSSS">
+            <div class="col-6 col-md-3" ">
                 <img src="${result[i].image}" class="card-img-top  img-fluid" style="height: 200px" alt="...">
                 <div class="card-body ">
                     <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
@@ -57,26 +57,23 @@ function myFunction2(e) {
 let COL2 = document.getElementById('COL2');
 let COL3 = document.getElementById('COL3');
 let COL4 = document.getElementById('COL4');
-let COLSSS = document.getElementById('COLSSS');
+let COLSSS = document.getElementsByClassName('COLSSS');
 
 function twoColumn() {
- COLSSS.classList.remove('col-6 col-md-3');
- COLSSS.classList.add('col-2');
+ COLSSS.classList.replace('col-2');
 }
 
 COL2.addEventListener('click', twoColumn);
 
 
 function threeColumn() {
- COLSSS.classList.remove('col-6 col-md-3');
- COLSSS.classList.add('col-3');
+ COLSSS.classList.replace('col-3');
 }
 
 COL3.addEventListener('click', threeColumn);
 
 function fourColumn() {
- COLSSS.classList.remove('col-6 col-md-3');
- COLSSS.classList.add('col-3');
+ COLSSS.classList.replace('col-4');
 }
 
 COL4.addEventListener('click', fourColumn);
