@@ -57,7 +57,7 @@ function myFunction2(e) {
 let COL2 = document.getElementById('COL2');
 let COL3 = document.getElementById('COL3');
 let COL4 = document.getElementById('COL4');
-let COLSSS = document.getElementsByClassName('COLSSS');
+let COLSSS = document.getElementById('output');
 
 function twoColumn() {
  COLSSS.classList.replace('col-2');
