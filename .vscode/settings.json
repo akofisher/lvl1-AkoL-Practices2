@@ -1,0 +1,5 @@
+{
+ "editor.wordWrap": "on",
+ "prettier.arrowParens": "avoid",
+ "prettier.singleQuote": true
+}
