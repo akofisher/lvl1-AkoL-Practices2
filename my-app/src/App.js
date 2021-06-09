@@ -23,9 +23,23 @@ const Todos = () => {
     tmp.splice(index, 1);
     setData([
       ...tmp
-    ]);
+    ])};
 
-  }
+    const editTodo = (index) => {
+    setData(data.map((el, indx) => {
+      if(indx === index) {
+        el.editing = !el.editing;
+      }
+      return el;
+    })
+
+    )}
+
+    let handleEdit = (index, e) => {
+    let tmp = [...data];
+    tmp[index]['title'] = e.target.value;
+    setData(tmp);
+    }
 
   let toggleStatus = (index) => {
     let tmp = [...data];
@@ -50,8 +64,12 @@ const Todos = () => {
               }
             }
             />
-            {el.title}
-
+            {el.editing ? (<input value={el.title} onChange={(e) => handleEdit(index, e)}/>) : el.title}
+            
+            <button onClick={() => {
+              editTodo(index)
+            }}>{el.editing ? 'close' : 'edit'}
+            </button> 
             <button onClick={() => {
               deleteTodo(index)
             }}>Delete
